@@ -380,7 +380,7 @@ function isPriceInRange(productPrice, priceRangeId) {
 
   const minPrice = range.min;
   const maxPrice = range.max;
-  const numericPrice = parseFloat(productPrice); // Convertendo para número
+  const numericPrice = parseFloat(productPrice.replace(",", ".")); // Convertendo para número
 
   console.log("Product Price:", numericPrice);
   console.log("Min Price:", minPrice);
