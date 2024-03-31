@@ -1,0 +1,147 @@
+.mobile-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow-y: hidden;
+  font-weight: bold;
+
+  &__order {
+    display: flex;
+
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+    &__title {
+      padding: 20px;
+      color: $color-2;
+      font-size: 4.2rem;
+      padding: 20px;
+      color: $color-2;
+      font-size: 4.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__line {
+      top: 70px;
+    }
+
+    &__button {
+      background: none;
+      text-align: left;
+      margin: 0;
+      color: $color-1;
+      border: none;
+    }
+  }
+
+  &__filter {
+    display: flex;
+
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+    &__title {
+      padding: 20px;
+      color: $color-2;
+      font-size: 4.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__line {
+      top: 70px;
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &__color--title {
+        padding-left: 20px;
+        color: $color-2;
+        font-size: 3.8rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__arrow {
+        color: $color-2;
+        font-size: 3.2rem;
+        padding-right: 1rem;
+      }
+
+      &__price--title {
+        padding-left: 20px;
+        color: $color-2;
+        font-size: 3.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__size--title {
+        padding-left: 20px;
+        color: $color-2;
+        font-size: 3.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__arrow {
+          color: $color-2;
+          font-size: 3.2rem;
+          padding-right: 1rem;
+        }
+      }
+
+      &__size--content {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        width: 40%;
+        gap: 1rem;
+        padding-left: 20px;
+      }
+
+      &__arrow {
+        color: $color-2;
+        font-size: 3.2rem;
+        padding-right: 1rem;
+      }
+
+      &__buttons {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+
+        &__button {
+          width: 50%;
+          text-align: center;
+          margin: 1rem;
+
+          &__apply {
+            background-color: $color-4;
+            border: none;
+          }
+
+          &__clear {
+            background: #fff;
+            color: #666666;
+            border: solid #666666 1px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

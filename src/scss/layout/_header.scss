@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__logo {
+    max-width: 100%;
+
+    &__img {
+      min-width: 16.5rem;
+      @include respond("phone") {
+        max-width: 8rem;
+      }
+    }
+  }
+
+  &__bag {
+    position: relative;
+
+    &-icon {
+      font-size: 2rem;
+    }
+
+    &-elipse {
+      background-color: $color-4;
+      border-radius: 50%;
+      max-width: 1rem;
+      padding: 0.5rem;
+      position: absolute;
+      top: 10px;
+      left: 7px;
+      display: flex;
+      justify-content: center;
+
+      &-quantity {
+        font-size: 1rem;
+        color: #fff;
+      }
+    }
+  }
+
+  @include respond("phone") {
+    width: 80%;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+}

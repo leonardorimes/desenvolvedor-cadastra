@@ -1,0 +1,129 @@
+.content {
+  padding: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: flex-start;
+  gap: 10rem;
+  font-size: 1.2rem;
+
+  @include respond("phone") {
+    padding: 0px;
+    text-align: center;
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    gap: 1rem;
+
+    &__title {
+      font-size: 2rem;
+      color: $color-2;
+      margin: 1.2rem 0px;
+      font-weight: 500;
+    }
+
+    &__ch {
+      cursor: pointer;
+      text-decoration: underline;
+      color: $color-3;
+      font-weight: 500;
+    }
+
+    &__more-colors {
+      display: none;
+      gap: 1rem;
+    }
+
+    &__price {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      gap: 1rem;
+    }
+
+    &__size {
+      &__title {
+        font-size: 2rem;
+        color: $color-2;
+        margin: 1.2rem 0px;
+        font-weight: 500;
+      }
+
+      &__buttons {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 5px;
+      }
+    }
+    @include respond("phone") {
+      display: none;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @include respond("phone") {
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      padding-left: 80px;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 14rem;
+      font-size: 3.2rem;
+      margin: 0 auto;
+
+      &__img {
+        max-width: 14rem;
+
+        @include respond("phone") {
+          max-width: 6rem;
+        }
+      }
+
+      &__title {
+        font-size: 1.4rem;
+        color: $color-1;
+        font-weight: bold;
+        margin: 10px 0px;
+      }
+
+      &__price {
+        font-weight: bolder;
+        font-size: 1.6rem;
+        margin-bottom: 2px;
+      }
+
+      &__Installments {
+        color: $color-2;
+        font-size: 1.6rem;
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    &__load-more {
+      grid-column: 1 / -1;
+      max-width: 20rem;
+      margin: 0 auto;
+      background-color: $color-4;
+      border: none;
+      @include respond("phone") {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

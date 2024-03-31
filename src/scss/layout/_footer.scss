@@ -1,0 +1,14 @@
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 33px;
+  max-width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  @include respond("phone") {
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+}

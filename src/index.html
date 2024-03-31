@@ -1,19 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor M3</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor M3</title>
-  <link rel="stylesheet" href="main.css" />
-</head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="./img/logo-m3.png"
+            alt="Logo Cadastra Company"
+            class="header__logo__img"
+          />
+        </div>
+        <div class="header__bag">
+          <i class="fas fa-shopping-bag header__bag-icon"></i>
+          <div class="header__bag-elipse">
+            <span class="header__bag-elipse-quantity-number">0</span>
+          </div>
+        </div>
+      </header>
 
-<body>
+      <hr />
+      <section class="mobile-menu closeMobileMenu">
+        <div class="mobile-menu__order">
+          <h2 class="mobile-menu__order__title">
+            ORDERNAR <span class="mobile-menu__order__title__x">x</span>
+          </h2>
+          <hr class="mobile-menu__order__line" />
+          <button id="btnRecentesMobile" class="mobile-menu__order__button">Mais recente</button>
+          <button id="btnMaiorPrecoMobile"  class="mobile-menu__order__button">Maior preço</button>
+          <button id="btnMenorPrecoMobile" class="mobile-menu__order__button">Menor preço</button>
+        </div>
+        <div class="mobile-menu__filter">
+          <h2 class="mobile-menu__filter__title">FILTRAR <span class="mobile-menu__order__title__x">x</span></h2>
+          <hr class="mobile-menu__order__line" />
+          <div class="mobile-menu__filter__options">
+              <h2 class="mobile-menu__filter__options__color--title">
+                CORES
+                <i
+                  class="fa-solid fa-chevron-down mobile-menu__filter__options__color--label__arrow"
+                ></i>
+              </h2>
+              
+       
 
-</body>
-<h1>Desafio m3</h1>
+            <div class="mobile-menu__filter__options__color--content">
+              <div>
+                <input type="checkbox" name="" id="yellow" />
+                <label for="yellow"> Amarelo</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="blue" />
+                <label for="blue">Azul</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="white" />
+                <label for="white">Branco</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="gray" />
+                <label for="gray">Cinza</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="orange" />
+                <label for="orange">Laranja</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="green" />
+                <label for="green">verde</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="red" />
+                <label for="red">vermelho</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="black" />
+                <label for="black">preto</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="pink" />
+                <label for="pink">Rosa</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="wine" />
+                <label for="wine">Vinho</label>
+              </div>
+            </div>
+            <div class="mobile-menu__filter__options">
+              <h2 class="mobile-menu__filter__options__size--title">
+                TAMANHOS
+                <i
+                  class="fa-solid fa-chevron-down mobile-menu__filter__options__size--label__arrow"
+                ></i>
+              </h2>
+              <div class="mobile-menu__filter__options__size--content ">
+                <button class="btnsize">P</button>
+                <button class="btnsize">M</button>
+                <button class="btnsize">G</button>
+                <button class="btnsize">GG</button>
+                <button class="btnsize">U</button>
+                <button class="btnsize">36</button>
+                <button class="btnsize">38</button>
+                <button class="btnsize">40</button>
+                <button class="btnsize">36</button>
+                <button class="btnsize">38</button>
+                <button class="btnsize">40</button>
+              </div>
+            </div>
 
-<script src="bundle.js"></script>
+            <div class="mobile-menu__filter__options__price--content">
+              <div>
+                <input type="checkbox" name="" id="R$50" />
+                <label for="R$50"> de R$0 até R$50</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="R$150" />
+                <label for="R$150">de R$51 até R$150</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="R$300" />
+                <label for="R$300">de R$51 até R$300</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="R$501_1" />
+                <label for="R$501_1"> de R$301 até R$500</label>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="R$501_2" />
+                <label for="R$501_2"> a partir de R$ 500</label>
+              </div>
+            </div>
+            <div class="mobile-menu__filter__options__buttons">
+              <button class="mobile-menu__filter__options__buttons__button mobile-menu__filter__options__buttons__button__apply">Aplicar</button>
+              <button class="mobile-menu__filter__options__buttons__button mobile-menu__filter__options__buttons__button__clear">Limpar</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="sortable-section">
+        <h2 class="sortable-section__title">Blusas</h2>
+        <div class="sortable-section__buttons-mobile">
+          <button class="sortable-section__buttons-mobile__filter">
+            Filtrar
+          </button>
+          <button class="sortable-section__buttons-mobile__order">
+            Ordenar
+          </button>
+        </div>
+        <div class="select">
+          <div id="category-select">
+            <input type="checkbox" id="options-view-button" />
 
+            <div id="select-button">
+              <div id="selected-value">Ordenar por:</div>
+
+              <div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <ul id="options">
+            <li class="option">
+              <input
+                type="radio"
+                name="category"
+                value="recentes"
+                data-label="Mais recentes"
+              />
+              <span>Mais recentes</span>
+            </li>
+
+            <li class="option">
+              <input
+                type="radio"
+                name="category"
+                value="menor"
+                data-label="Menor preço"
+              />
+              <span>Menor preço</span>
+            </li>
+
+            <li class="option">
+              <input
+                type="radio"
+                name="category"
+                value="maior"
+                data-label="maior preço"
+              />
+              <span>maior preço</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content">
+        <div class="content__filter">
+          <input type="checkbox" id="ch" />
+          <h3 class="content__filter__title">Cores</h3>
+          <div>
+            <input type="checkbox" name="" id="Amarelo_D" />
+            <label for="Amarelo_D"> Amarelo</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="Azul_D" />
+            <label for="Azul_D">Azul</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="Branco_D" />
+            <label for="Branco_D">Branco</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="Cinza_D" />
+            <label for="Cinza_D">Cinza</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="Laranja_D" />
+            <label for="Laranja_D">Laranja</label>
+          </div>
+          <label for="ch" class="content__filter__ch">
+            Ver todas as cores<i class="fa-solid fa-arrow-down"></i
+          ></label>
+
+          <div class="content__filter__more-colors">
+            <div>
+              <input type="checkbox" name="" id="Green_D" />
+              <label for="Green_D">verde</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Vermelho_D" />
+              <label for="Vermelho_D">vermelho</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Preto_D" />
+              <label for="Preto_D">preto</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Rosa_D" />
+              <label for="Rosa_D">Rosa</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Vinho_D" />
+              <label for="Vinho_D">Vinho</label>
+            </div>
+          </div>
+
+          <div class="content__filter__size">
+            <h3 class="content__filter__size__title">Tamanho</h3>
+            <div class="content__filter__size__buttons">
+              <button class="btnsize">P</button>
+              <button class="btnsize">M</button>
+              <button class="btnsize">G</button>
+              <button class="btnsize">GG</button>
+              <button class="btnsize">U</button>
+              <button class="btnsize">36</button>
+              <button class="btnsize">38</button>
+              <button class="btnsize">40</button>
+              <button class="btnsize">36</button>
+              <button class="btnsize">38</button>
+              <button class="btnsize">40</button>
+            </div>
+          </div>
+          <div class="content__filter__price">
+            <h3 class="content__filter__title">Faixa de Preço</h3>
+            <div>
+              <input type="checkbox" name="" id="R$50_d" />
+              <label for="R$50_d"> de R$0 até R$50</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="R$150_d" />
+              <label for="R$150_d">de R$51 até R$150</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="R$300_d" />
+              <label for="R$300_d">de R$51 até R$300</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="R$500_d" />
+              <label for="R$500_d"> de R$301 até R$500</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="R$501_d" />
+              <label for="R$501_d"> a partir de R$ 500</label>
+            </div>
+          </div>
+        </div>
+        <div class="content__cards">
+          
+        </div>
+        <button class="content__cards__load-more">Carregar Mais</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__paragraph">Cadastra: Implantação de E-commerce VTEX</p>
+    </footer>
+  </body>
+
+  <script src="bundle.js"></script>
 </html>

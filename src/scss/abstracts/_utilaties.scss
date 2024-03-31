@@ -1,0 +1,133 @@
+/* see more colors logic  */
+#ch {
+  display: none;
+}
+#ch:checked ~ .content__filter__more-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ch:checked ~ .content__filter__ch {
+  display: none;
+}
+
+[type="checkbox"] {
+  opacity: 0;
+}
+
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: #666;
+  line-height: 25px;
+}
+
+/*  checkbox checked style   */
+
+[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #aaa;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../img/checked.png) !important;
+  background-size: contain;
+}
+
+/* custom selection option list */
+.select {
+  padding: 1rem;
+  position: absolute;
+  top: 90px;
+  right: 80px;
+  max-width: 10rem;
+
+  @include respond("phone") {
+    display: none;
+  }
+}
+
+#category-select label {
+  font-size: 0.75rem;
+  letter-spacing: 0.0225rem;
+}
+
+#select-button {
+  margin-top: 0.5rem;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  border: 1px solid #252529;
+}
+
+#select-value {
+  font-size: 0.875rem;
+  letter-spacing: 0.02625rem;
+}
+
+#category-select {
+  position: relative;
+  height: auto;
+}
+
+#options-view-button {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#options {
+  margin-top: 0.25rem;
+  border: 1px solid #252529;
+  display: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  max-width: 90%;
+  background-color: #fff;
+  position: relative;
+}
+
+.option:has(input:checked),
+.option:hover {
+  color: #fff;
+  background-color: $color-4;
+}
+
+.option input[type="radio"] {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+#category-select:has(#options-view-button:checked) + #options {
+  display: block;
+}
+
+.closeMobileMenu {
+  display: none !important;
+}

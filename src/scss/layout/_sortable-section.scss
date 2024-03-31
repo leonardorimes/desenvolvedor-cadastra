@@ -1,0 +1,35 @@
+.sortable-section {
+  padding: 20px;
+
+  max-width: 70%;
+  margin: 0 auto;
+
+  @include respond("phone") {
+    padding: 40px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-2;
+    font-size: 4.2rem;
+  }
+  &__buttons-mobile {
+    display: none;
+    @include respond("phone") {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__filter,
+    &__order {
+      color: #666666;
+      font-size: 2rem;
+      padding: 12px;
+      border: solid #666666 1px;
+      text-align: center;
+      background: none;
+      margin-top: 1rem;
+    }
+  }
+}
